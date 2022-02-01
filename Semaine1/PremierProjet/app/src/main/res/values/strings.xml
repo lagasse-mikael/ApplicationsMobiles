@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PremiereApplication</string>
+    <string name="app_header">Ma premiere application!</string>
+    <string name="switchTextButton">Mon premier bouton!</string>
+</resources>
