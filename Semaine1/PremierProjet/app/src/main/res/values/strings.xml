@@ -2,4 +2,11 @@
     <string name="app_name">PremiereApplication</string>
     <string name="app_header">Ma premiere application!</string>
     <string name="switchTextButton">Mon premier bouton!</string>
+    <string name="telTextButton">Appeler quelquun!</string>
+    <string name="SMSButton">Texter quelquun!</string>
+    <string name="switchActivityText">Jouer a un jeu!</string>
+    <string name="greetingsTemplate">Bonjour </string>
+    <string name="goodAnswer">Bonne reponse!</string>
+    <string name="answerTooLow">Plus haut..</string>
+    <string name="answerTooHigh">Plus bas..</string>
 </resources>

@@ -20,11 +20,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.193" />
 
-    <EditText
-        android:id="@+id/inputField"
-        android:layout_width="200sp"
+    <LinearLayout
+        android:layout_width="400sp"
         android:layout_height="50sp"
-        android:inputType="text"/>
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="110sp"
+            android:layout_height="50sp"
+            android:textSize="20sp"
+            android:text="Username : "
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/usernameField"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:inputType="text"/>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonID"
@@ -32,5 +47,26 @@
         android:layout_height="40sp"
         android:text="@string/switchTextButton"
         android:backgroundTint="@color/teal_200"/>
+
+    <Button
+        android:id="@+id/buttonTelephone"
+        android:layout_width="220sp"
+        android:layout_height="40sp"
+        android:text="@string/telTextButton"
+        android:backgroundTint="@color/teal_200"/>
+
+    <Button
+        android:id="@+id/buttonSMS"
+        android:layout_width="220sp"
+        android:layout_height="40sp"
+        android:text="@string/SMSButton"
+        android:backgroundTint="@color/purple_500"/>
+
+    <Button
+        android:id="@+id/buttonActivity"
+        android:layout_width="220sp"
+        android:layout_height="40sp"
+        android:text="@string/switchActivityText"
+        android:backgroundTint="@color/purple_500"/>
 
 </LinearLayout>
