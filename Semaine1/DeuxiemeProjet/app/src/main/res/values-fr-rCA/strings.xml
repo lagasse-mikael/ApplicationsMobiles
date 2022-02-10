@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">S02 Layout Contraint</string>
+    <string name="warehouse">Cabanon</string>
+    <string name="petit">Petit</string>
+    <string name="lorem">c\'est bin trop long tf</string>
+</resources>
