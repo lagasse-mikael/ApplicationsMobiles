@@ -4,4 +4,6 @@
     <string name="warehouse">Cabanon</string>
     <string name="petit">Petit</string>
     <string name="lorem">c\'est bin trop long tf</string>
+    <string name="playerLevel">Niveau %d</string>
+    <string name="training">Entrainement</string>
 </resources>
