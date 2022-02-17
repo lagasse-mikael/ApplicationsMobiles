@@ -32,6 +32,13 @@ class PilotActivity : AppCompatActivity() {
         }
 
             binding.spin?.setOnClickListener {
+                if(!viewModel.fly(binding.sldRevolution.value.toInt(),binding.isTraining.isChecked)){
+                    Snackbar.make(binding.root,getString(R.string.alertCantFly),Snackbar.LENGTH_INDEFINITE)
+                        .setAction(getString(R.string.rechargePlayer)){
+                            viewModel.recharge()
+                        }
+                        .show()
+                }
 //                if (_pilot.canFly()) {
 //                    it.isEnabled = false
 //                    _pilot.fly(binding.sldRevolution.value.toInt(), binding.isTraining.isChecked)
