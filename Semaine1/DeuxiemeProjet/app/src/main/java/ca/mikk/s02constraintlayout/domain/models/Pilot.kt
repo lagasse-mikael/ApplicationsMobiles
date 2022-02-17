@@ -4,6 +4,10 @@ import kotlin.random.Random
 
 data class Pilot(var name:String,var life: Int,var cube:Int = 0) {
 
+    val DEFAULT_LIFE = life;
+    val DEFAULT_ENERGY = 7;
+    val DEFAULT_SHIELD = 5;
+
     private var _experince: Int = 0
     var shield: Int = 5
     var energy: Int = 7
@@ -21,12 +25,14 @@ data class Pilot(var name:String,var life: Int,var cube:Int = 0) {
     }
 
     fun canFly():Boolean{
-        return life > 0 && energy > 0
+        return life > 0 && energy > 0 && shield > 0
     }
 
     // TO DO , constantes
     fun recharge(){
-        energy = 7
+        energy = DEFAULT_ENERGY
+        shield = DEFAULT_SHIELD
+        life = DEFAULT_LIFE
 
     }
 }
