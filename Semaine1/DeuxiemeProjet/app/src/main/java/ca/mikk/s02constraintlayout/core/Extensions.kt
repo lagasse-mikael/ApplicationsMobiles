@@ -7,5 +7,5 @@ fun String.laMethodeMikael() : String{
 }
 
 fun <T> MutableLiveData<T>.notify(){
-    this.postValue(this)
+    this.postValue(this.value)
 }
