@@ -12,6 +12,7 @@ class PlanetRepository {
             planets.add(newPlanet())
         }
 
+        return planets
     }
 
     private fun newPlanet() : Planet {
