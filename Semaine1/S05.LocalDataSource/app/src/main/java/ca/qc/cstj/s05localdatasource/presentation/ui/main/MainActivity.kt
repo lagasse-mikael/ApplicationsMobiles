@@ -1,5 +1,7 @@
 package ca.qc.cstj.s05localdatasource.presentation.ui.main
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
@@ -33,6 +35,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnAdd.setOnClickListener {
             viewModel.createContact("Mikael","Lagasse",true)
+        }
+    }
+
+    companion object {
+        fun newIntent(context:Context) : Intent {
+            return Intent(context,MainActivity::class.java)
         }
     }
 }

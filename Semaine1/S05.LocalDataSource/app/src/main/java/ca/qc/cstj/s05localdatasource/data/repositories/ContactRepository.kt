@@ -18,14 +18,4 @@ interface ContactRepository {
     @Insert
     suspend fun create(contact: Contact)
 
-//    fun retrieveAll(numContacts: Int): List<Contact> {
-//
-//        val contacts = mutableListOf<Contact>()
-//        for (i in 1..numContacts) {
-//            contacts.add(Contact("FirstName $i", "LastName $i", i % 2 == 0))
-//        }
-//
-//        return contacts
-//    }
-
 }

@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 data class Contact(
     @ColumnInfo(name="firstName")val firstName : String,
     @ColumnInfo(name="lastName") val lastName : String,
-    @ColumnInfo(name="isOnline") val isOnline : Boolean) {
+    @ColumnInfo(name="isOnline") val isOnline : Boolean)
+{
     @PrimaryKey(autoGenerate = true) var idContact : Int = 0
-
 }
