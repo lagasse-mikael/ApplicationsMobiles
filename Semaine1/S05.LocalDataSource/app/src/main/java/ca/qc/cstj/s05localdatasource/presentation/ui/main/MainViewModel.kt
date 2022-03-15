@@ -31,4 +31,16 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             contactRepo.create(contact)
         }
     }
+
+    public fun deleteContact(contact : Contact ) {
+        viewModelScope.launch {
+            contactRepo.delete(contact)
+        }
+    }
+
+    public fun updateContact(contact : Contact ) {
+        viewModelScope.launch {
+            contactRepo.update(contact)
+        }
+    }
 }
