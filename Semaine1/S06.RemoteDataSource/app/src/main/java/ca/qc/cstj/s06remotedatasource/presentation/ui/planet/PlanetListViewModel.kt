@@ -21,7 +21,9 @@ class PlanetListViewModel : ViewModel() {
 
     init {
         viewModelScope.launch {
-            _planets.value = planetRepository.retrieveAll()
+            planetRepository.retrieveAllWithUpdates().collect {
+                _planets = it
+            }
         }
     }
 
