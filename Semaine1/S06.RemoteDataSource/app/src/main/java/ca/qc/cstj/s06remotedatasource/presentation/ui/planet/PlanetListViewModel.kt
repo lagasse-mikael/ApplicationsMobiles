@@ -16,7 +16,7 @@ class PlanetListViewModel : ViewModel() {
 
     private val planetRepository = FuelPlanetRepository()
 
-    private val _planets = MutableLiveData<Resource<List<Planet>>>()
+    private var _planets = MutableLiveData<Resource<List<Planet>>>()
     val planets: LiveData<Resource<List<Planet>>> get() = _planets
 
     init {
