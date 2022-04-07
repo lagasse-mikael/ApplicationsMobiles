@@ -16,9 +16,10 @@ class MeteoRepository {
         return flow {
             while(true) {
                 try {
-                    meteoDataSource.retrieve(cityName)
+                    emit(LoadingResource.Loading())
+                    emit(LoadingResource.Success(meteoDataSource.retrieve(cityName)))
                 } catch(ex:Exception) {
-
+                    emit(LoadingResource.Error(ex, ex.message))
                 }
                 delay(Constants.METEO_REFRESH_INTERVAL)
             }
