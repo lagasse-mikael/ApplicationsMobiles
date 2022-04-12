@@ -6,4 +6,5 @@ object Constants {
     const val API_KEY = "6272e7e8ce70b2dc82fa696689029fec"
     // le %s est remplacer par le cityName qu'on met dans le format.
     const val WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?q=%s&appid=${API_KEY}&units=metric"
+    const val FLAG_URL = "https://flagcdn.com/h20/%s.png"
 }

@@ -1,5 +1,6 @@
 package ca.qc.cstj.s08bottomnavigation.data.datasources
 
+import android.util.Log
 import ca.qc.cstj.s08bottomnavigation.core.Constants
 import ca.qc.cstj.s08bottomnavigation.data.dto.MeteoDTO
 import ca.qc.cstj.s08bottomnavigation.domain.models.Meteo
@@ -24,6 +25,7 @@ class MeteoDataSource {
 
             when(result) {
                 is Result.Success -> {
+                    Log.e("decomp",result.value.content)
                     //Deserialiser ma réponse JSON
                     val meteoDTO = json.decodeFromString<MeteoDTO>(result.value.content)
                     return@withContext Meteo(meteoDTO.name,
@@ -32,7 +34,8 @@ class MeteoDataSource {
                             meteoDTO.weather[0].main,
                             meteoDTO.coord.lat,
                             meteoDTO.coord.lon,
-                            meteoDTO.dt)
+                            meteoDTO.dt,
+                            meteoDTO.timezone)
 
                 }
                 is Result.Failure -> {
