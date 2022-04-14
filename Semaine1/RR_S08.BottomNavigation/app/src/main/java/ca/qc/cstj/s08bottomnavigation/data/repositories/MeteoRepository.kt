@@ -23,8 +23,6 @@ class MeteoRepository {
                 }
                 delay(Constants.METEO_REFRESH_INTERVAL)
             }
-
         }
     }
-
 }

@@ -26,6 +26,7 @@ class SettingsFragment : Fragment(R.layout.fragment_setttings) {
             viewModel.add()
         }
 
+
     }
 
 }

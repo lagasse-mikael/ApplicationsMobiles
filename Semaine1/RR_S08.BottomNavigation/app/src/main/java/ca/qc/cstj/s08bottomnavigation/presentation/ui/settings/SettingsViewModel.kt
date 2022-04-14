@@ -11,7 +11,6 @@ class SettingsViewModel : ViewModel() {
 
     init {
         _count.value = 0
-        //_delivery.value = Delivery()
     }
 
     fun add() {
