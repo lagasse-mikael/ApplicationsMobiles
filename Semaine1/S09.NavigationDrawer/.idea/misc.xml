@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/2068410/ApplicationsMobiles/Semaine1/S09.NavigationDrawer/app/src/main/res/drawable/ic_baseline_qr_code_scanner_24.xml" value="0.268" />
+        <entry key="..\:/2068410/ApplicationsMobiles/Semaine1/S09.NavigationDrawer/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/2068410/ApplicationsMobiles/Semaine1/S09.NavigationDrawer/app/src/main/res/layout/fragment_planet.xml" value="0.36666666666666664" />
+        <entry key="..\:/2068410/ApplicationsMobiles/Semaine1/S09.NavigationDrawer/app/src/main/res/layout/item_planet.xml" value="0.36666666666666664" />
+        <entry key="..\:/2068410/ApplicationsMobiles/Semaine1/S09.NavigationDrawer/app/src/main/res/layout/nav_header_main.xml" value="0.36666666666666664" />
         <entry key="..\:/2068410/ApplicationsMobiles/Semaine1/S09.NavigationDrawer/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
       </map>
     </option>
