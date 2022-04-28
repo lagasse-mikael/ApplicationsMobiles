@@ -38,5 +38,10 @@
         android:name="ca.qc.cstj.s09navigationdrawer.presentation.ui.barcode.BarcodeFragment"
         android:label="fragment_barcode"
         tools:layout="@layout/fragment_barcode" />
+    <fragment
+        android:id="@+id/nav_fun"
+        android:name="ca.qc.cstj.s09navigationdrawer.presentation.ui.other.amusement.AmusementFragment"
+        android:label="fragment_fun"
+        tools:layout="@layout/fragment_fun" />
 
 </navigation>
